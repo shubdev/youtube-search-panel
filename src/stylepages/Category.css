@@ -1,0 +1,39 @@
+/* category */
+.category-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 20px;
+
+}
+
+.category-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+
+}
+
+.cat-btn.active {
+    background: #fff;
+    color: #000;
+}
+
+.cat-btn.inactive {
+    background: #272727;
+    color: #fff;
+}
+
+.cat-btn.inactive:hover {
+    background: #3a3a3a;
+}

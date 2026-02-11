@@ -10,6 +10,9 @@ function App() {
   const [search, setSearch] = useState("");
 
   const filterData = itemData.filter((item) => {
+    if (search === 'All') {
+      return itemData;
+    }
     return item.title.toLowerCase().includes(search.toLowerCase())
   })
 

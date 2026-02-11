@@ -50,7 +50,7 @@ const NavBar = ({ search, setSearch }) => {
                 <div className="center">
                     <div className="search-box">
                         <input type="text" placeholder="Search..." value={search} onChange={(e) => {
-                            console.log("search", e.target.value);
+                            // console.log("search", e.target.value);
 
                             setSearch(e.target.value)
                         }} />

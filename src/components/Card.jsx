@@ -1,5 +1,5 @@
 import "../stylepages/Card.css";
-import itemData from "../assets/Data.json"
+import itemData from "../assets/Data.json";
 import ShowError from "./showError";
 export default function Card({ data }) {
 
@@ -9,8 +9,6 @@ export default function Card({ data }) {
                 {
                     data ? (
                         data.map((item) => {
-                            // console.log(item);
-
                             return (
                                 <div className="card" key={item.id}>
                                     <div className="thumb-wrapper">
